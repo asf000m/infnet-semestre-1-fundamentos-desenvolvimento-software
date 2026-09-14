@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.15</title>
+  <style>
+    body {
+      width: 576px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>15 Grupo - Trocando a imagem</h1>
+<p>Nos arquivos do projeto, adicione:</p>
+<ul>
+  <li>Uma imagem de grãos de café</li>
+  <li>Uma imagem de uma xícara de café</li>
+</ul>
+<p>No arquivo index.html:</p>
+<ul>
+  <li>Crie uma única tag <img> para exibir inicialmente a imagem dos grãos de café.</li>
+</ul>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Selecione a imagem utilizando o DOM (por exemplo, com getElementById).</li>
+  <li>Adicione uma função de clique (onclick ou addEventListener("click", ...)) ao elemento &lt;img&gt;.</li>
+  <li>Quando a imagem for clicada:</li>
+  <ul>
+    <li>Troque o src da imagem dos grãos de café para a imagem da xícara de café.</li>
+    <li>Adicione o atributo title com o texto: "xícara de café".</li>
+  </ul>
+</ul>
+<p>Observações:</p>
+<ul>
+  <li>Não faça as alterações diretamente no HTML.</li>
+  <li>Utilize apenas uma função de clique vinculada à tag &lt;img&gt;.</li>
+  <li>Toda a lógica deve ser implementada via JavaScript utilizando o DOM.</li>
+</ul>
+
+<hr>
+<pre>Resultado:</pre>
+
+<img id="cafe" src="https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg" alt="grãos de café">
+
+<script>
+let cafe = document.getElementById('cafe');
+
+cafe.addEventListener("click", function() {
+  cafe.src = 'https://cdn.pixabay.com/photo/2016/01/02/04/59/coffee-1117933_1280.jpg'
+});
+</script>
+
+</body>
+</html>

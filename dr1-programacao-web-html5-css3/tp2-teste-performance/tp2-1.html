@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>TP2.1</title>
+  <link rel="stylesheet" href="styles/tp.css" />
+  <link rel="stylesheet" href="styles/tp2-1.css">
+</head>
+<body>
+
+<section id="seletor-elemento">
+  <h2>Seletor por elemento HTML</h2>
+  <p>Estiliza elementos pelo nome da sua tag HTML. Exemplo:</p>
+  <pre class="css-code">
+p {
+color: red;
+}
+  </pre>
+  <p>No código CSS acima, serão estilizados todos os parágrafos da página com
+  a cor de texto vermelha. Todos os parágrafos desta seção estão estilizados
+  com a propriedade CSS acima.</p>
+</section>
+
+<section id="seletor-id">
+  <h2>Seletor por ID</h2>
+  <p>Estiliza elementos por meio de um identificador únido para um elemento HTML da página. O código HTML abaixo define um elemento e sua ID:</p>
+  <pre class="html-code">
+&lt;p id=&quot;introducao&quot;&gt;
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Fugiat ex vel molestiae maxime distinctio veniam delectus ipsum nesciunt, magni doloremque 
+non aperiam, architecto pariatur. At dicta id vel fuga eveniet?
+&lt;/p&gt;
+  </pre>
+  <p>Em seguida, é usado o seletor ID para estilizar apenas o elemento com a ID especificada, utilizando o símbolo #:</p>
+  <pre class="css-code">
+#introducao {
+color: green;
+font-weight: bold;
+}
+  </pre>
+  <p>Resultando em:</p>
+  <p id="introducao">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Fugiat ex vel molestiae maxime distinctio veniam delectus ipsum nesciunt, magni doloremque 
+  non aperiam, architecto pariatur. At dicta id vel fuga eveniet?</p>
+</section>
+
+<section>
+  <h2>Seletor por classe</h2>
+  <p>Estiliza os elementos por meio de uma classe, que é um identificador especial que pode ser usado em vários elementos em uma página.</p>
+  <pre class="html-code">
+&lt;ul&gt;
+&lt;li class=&quot;special&quot;&gt;Lorem ipsum&lt;/li&gt;
+&lt;li class=&quot;special&quot;&gt;Dolor sit&lt;/li&gt;
+&lt;li&gt;Amet consectetur&lt;/li&gt;
+&lt;li class=&quot;special&quot;&gt;Adipisicing elit&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+  <pre class="css-code">
+.special {
+color: orange;
+font-size: 1.2em;
+}
+  </pre>
+  <ul>
+    <li class="special">Lorem ipsum</li>
+    <li class="special">Dolor sit</li>
+    <li>Amet consectetur</li>
+    <li class="special">Adipisicing elit</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Seletor universal *</h2>
+  <p>Seleciona todos os elementos da página.</p>
+  <pre class="html-code">
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+&lt;p&gt;Et temporibus repellat eius quo, possimus quis commodi fuga aliquid quod quae 
+veniam saepe amet in necessitatibus ducimus ea autem expedita quos?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum&lt;/li&gt;
+&lt;li&gt;Dolor sit&lt;/li&gt;
+&lt;li&gt;Amet consectetur&lt;/li&gt;
+&lt;li&gt;Adipisicing elit&lt;/li&gt;
+&lt;/ol&gt;
+  </pre>
+  <pre class="css-code">
+* {
+border: 1px solid green;
+color: blue;
+}
+  </pre>
+  <div id="seletor-universal">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Et temporibus repellat eius quo, possimus quis commodi fuga aliquid quod quae veniam saepe amet in necessitatibus ducimus ea autem expedita quos?</p>
+    <ol>
+      <li>Lorem ipsum</li>
+      <li>Dolor sit</li>
+      <li>Amet consectetur</li>
+      <li>Adipisicing elit</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>Seletor de aninhamento</h2>
+  <p>Estiliza um elemento dentro de um contexto de outro elemento. O aninhamento reduz a necessidade de repetir seletores para elementos relacionados. Exemplo:</p>
+  <pre class="html-code">
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur &lt;strong&gt;adipisicing elit.&lt;/strong&gt;
+Fugiat ex vel molestiae maxime distinctio veniam delectus &lt;strong&gt;ipsum nesciunt&lt;/strong&gt;, 
+magni doloremque non aperiam, architecto pariatur. At dicta id vel fuga eveniet?&lt;/p&gt;
+  </pre>
+  <pre class="css-code">
+p {
+font-style: serif;
+color: darkred;
+
+& strong {
+color: darkblue;
+font-weight: bold;
+font-style: sans-serif;
+}
+}
+  </pre>
+  <div id="seletor-aninhamento">
+    <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong>
+    Fugiat ex vel molestiae maxime distinctio veniam delectus <strong>ipsum nesciunt</strong>, magni doloremque non aperiam, architecto pariatur. At dicta id vel fuga eveniet?</p>
+    </div>
+</section>
+
+<section>
+  <h2>Seletor por atributo</h2>
+  <p>Estiliza um elemento com determinado atributo ativado.</p>
+  <pre class="html-code">
+&lt;p&gt;
+Lorem ipsum dolor sit amet consectetur &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;adipisicing&lt;/a&gt; elit. 
+Fugiat ex vel molestiae &lt;a href=&quot;&quot;&gt;maxime&lt;/a&gt; distinctio veniam &lt;a href=&quot;&quot; target=&quot;_black&quot;&gt;delectus&lt;/a&gt; ipsum nesciunt, magni &lt;a href=&quot;&quot;&gt;doloremque&lt;/a&gt; 
+non aperiam, architecto pariatur. At dicta id vel fuga &lt;a href=&quot;&quot; target=&quot;_black&quot;&gt;eveniet&lt;/a&gt;?
+&lt;/p&gt;
+  </pre>
+  <pre class="css-code">
+a[href] {
+color: orange;
+font-weight: bold;
+}
+a[target] {
+color: darkorchid;
+font-style: italic;
+}
+  </pre>
+  <div id="seletor-atributo">
+    <p>
+      Lorem ipsum dolor sit amet consectetur <a href="" target="_blank">adipisicing</a> elit. 
+      Fugiat ex vel molestiae <a href="">maxime</a> distinctio veniam <a href="" target="_black">delectus</a> ipsum nesciunt, magni <a href="">doloremque</a> 
+      non aperiam, architecto pariatur. At dicta id vel fuga <a href="" target="_black">eveniet</a>?
+    </p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

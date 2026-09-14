@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+  width: 66dvw;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+.exercicio {
+  margin: 0.5rem;
+  padding: 1rem;
+
+  border: 1px solid lightgray;
+
+  h3 {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    padding-left: 2rem;
+  }
+}

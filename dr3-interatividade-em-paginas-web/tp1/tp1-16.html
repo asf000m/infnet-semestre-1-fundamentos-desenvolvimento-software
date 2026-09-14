@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.16</title>
+  <style>
+    body {
+      width: 576px;
+    }
+    img {
+      width: 100%;
+    }
+
+    .minhaDiv {
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;  
+    border: 2px dotted yellow;
+  }
+  </style>
+</head>
+<body>
+
+<h1>16 Grupo - Trocando estilos</h1>
+<p>No arquivo index.html:</p>
+<ul>
+  <li>Crie uma tag <div> com a classe minhaDiv.</li>
+  <li>Aplique, via CSS, as seguintes propriedades à classe .minhaDiv:</li>
+  <ul>
+    <li>Altura: 200px</li>
+    <li>Largura: 200px</li>
+    <li>Cor de fundo: verde</li>
+    <li>Borda: 2px tracejada</li>
+  </ul>
+
+  <li>Dentro da div, adicione um elemento &lt;h2&gt; com o conteúdo: "TP1"</li>
+</ul>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Selecione a div com a classe minhaDiv utilizando o DOM.</li>
+  <li>Adicione uma única função de clique à div.</li>
+  <li>Quando o elemento for clicado, altere o atributo style da div, modificando:</li>
+  <ul>
+    <li>Cor de fundo para azul</li>
+    <li>Cor da letra (texto) para branca</li>
+    <li>Cor da borda para laranja</li>
+    <li>Aumente a largura e altura da div em 20px</li>
+  </ul>
+</ul>
+<p>Observações:</p>
+<ul>
+  <li>Não altere os estilos diretamente no HTML.</li>
+  <li>As mudanças devem ocorrer somente via DOM e JavaScript, após o clique.</li>
+  <li>Apenas uma função de clique deve ser associada ao elemento div.</li>
+</ul>
+
+<hr>
+<pre>Resultado:</pre>
+
+<div class="minhaDiv">
+  <h2>TP1</h2>
+</div>
+
+<script>
+let minhaDiv = document.querySelector('.minhaDiv');
+
+minhaDiv.addEventListener('click', function() {
+  minhaDiv.style.backgroundColor = "dodgerblue";
+  minhaDiv.style.color = "white";
+  minhaDiv.style.border = "2px dotted lightorange";
+  minhaDiv.style.width = "300px";
+  minhaDiv.style.height = "300px";
+});
+</script>
+
+</body>
+</html>

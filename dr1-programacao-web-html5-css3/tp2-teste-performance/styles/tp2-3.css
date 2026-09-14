@@ -1,0 +1,18 @@
+h1 {
+  text-decoration: underline;
+}
+p {
+  font-size: 18pt;
+}
+#paragraph1 {
+  font-family: "Cherry Swash";
+}
+#paragraph2 {
+  font-family: "Montserrat";
+}
+#paragraph3 {
+  font-family: "Asimovian";
+}
+#paragraph4 {
+  font-family: "Story Script";
+}

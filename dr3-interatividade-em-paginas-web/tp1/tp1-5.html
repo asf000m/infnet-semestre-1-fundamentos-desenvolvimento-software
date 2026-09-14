@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.5</title>
+  <style>
+    body {
+      width: 576px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>5 Adicionando método em objeto</h1>
+<p>No arquivo script.js, reaproveite a estrutura do objeto colegio criada no exercício anterior e siga as etapas abaixo:</p>
+<ul>
+  <li>No objeto colegio criado anteriormente, adicione as seguintes propriedades:</li>  
+  <ul>
+    <li>nomeDiretor</li>
+    <li>numeroAlunos</li>
+    <li>telefone</li>
+  </ul>
+
+  <li>Preencha cada uma delas com valores fictícios.</li>
+  <li>Adicione ao objeto um método chamado obterDiretor, que exiba um alerta com o nome do diretor (ou seja, o valor da propriedade nomeDiretor).</li>
+  <li>Por fim, chame o método obterDiretor a partir do próprio objeto colegio.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+let nomeColegio = prompt('Digite o nome do colégio');
+let anoFundacao = Number(prompt('Digite o ano de funcação do colégio'));
+
+const colegio = {
+  nome: nomeColegio,
+  anoFundacao,
+  nomeDiretor: 'Roberto Lima',
+  numeroAlunos: 520,
+  telefone: '5501910203040',
+
+  obterDiretor() {
+    alert(`Diretor: ${this.nomeDiretor}`);
+  }
+}
+
+colegio.obterDiretor();
+
+console.log("colegio: ", colegio)
+</script>
+
+</body>
+</html>

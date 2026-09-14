@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  background: #E0E0E0;
+}
+
+article {
+  position: absolute;
+  top: 25%;
+}
+
+.images {
+  img {
+  width: 30%;
+  margin: 0 0.1%;
+  }
+}

@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+#cards {
+  width: 100dvw;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: middle;
+  width: 350px;
+  height: 490px;
+  margin: 20px 10px;
+  padding: 0;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+  
+  .animal-picture {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .animal-name {
+    margin: 0;
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #a57b21;
+  }
+
+  .animal-description {
+    margin: 0.5em 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 11pt;
+  }
+}

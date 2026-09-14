@@ -1,0 +1,33 @@
+body,
+nav,
+header,
+main,
+section,
+footer {
+  box-sizing: border-box;
+  height: fit-content;
+  margin: 0.5rem 1rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border: 3px solid black;
+}
+
+body {
+  border-color: lightblue;
+}
+
+nav {
+  border-color: lightsalmon;
+}
+
+main {
+  border-color: lightcoral;
+}
+
+section {
+  border-color: lightgreen;
+}
+
+footer {
+  border-color: lightseagreen;
+}

@@ -1,0 +1,8 @@
+h1 {
+  text-decoration: underline;
+}
+
+video {
+  width: 100%;
+  max-height: 90dvh;
+}

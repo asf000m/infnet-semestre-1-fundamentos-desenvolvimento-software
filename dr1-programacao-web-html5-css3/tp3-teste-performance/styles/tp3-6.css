@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 640px;
+  margin: 15px;
+  
+  /* Text */
+  font-family: Roboto;
+  
+  /* Colors */
+  border-radius: 5px;
+
+  .fa-bars {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 10px;
+    font-size: 1.5em;
+    color: #ffc300;
+  }
+}
+
+.poster {
+  position: absolute;
+  img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.description {
+  height: 300px;
+  position: relative;
+  top: 320px;
+  padding: 20px 20px 0 20px;
+  
+  /* Colors */
+  border-radius: 0 0 5px 5px;
+  color: white;
+  background: rgb(0,29,61);
+  background: linear-gradient(180deg,rgba(0, 29, 61, 0.0) 0%, rgba(0, 29, 61, 0.5) 5%, rgba(0, 29, 61, 1) 25%);
+
+  span {
+    margin: 0;
+    font-size: 0.75em;
+    &:after {
+      content: " / ";
+    }
+  }
+
+  .summary,
+  .cast {
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 0.75em;
+  }
+  h2 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  .cast {
+    font-style: italic;
+  }
+}
+
+.buttons {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 245px;
+  padding: 10px 0;
+  
+  /* Text */
+  font-size: 1.5em;
+  
+  /* Color */
+  border-radius: 0 0 5px 5px;
+  color: white;
+  background: #001D3D;
+
+  button {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 50px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #ffc300;
+    color: #ffc300;
+    background-color: #001d3d;
+  }
+
+  a {
+    margin: 0 10px;
+    color: #ffc300;
+  }
+}
+
+button:hover,
+a:hover {
+  color: #ffd60a;
+  transform: scale(1.05);
+  transition: 100ms;
+}

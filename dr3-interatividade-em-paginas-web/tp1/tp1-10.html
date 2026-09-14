@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.10</title>
+  <style>
+    body {
+      width: 576px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>10 Removendo atributo</h1>
+<p>No arquivo index.html:</p>
+<ul>
+  <li>Crie um elemento <a> com:</li>
+  <ul>
+    <li>o endereço https://www.infnet.edu.br/infnet/home/ no atributo href;</li>
+    <li>o atributo target="_blank", para que o link abra em uma nova aba.</li>
+  </ul>
+
+  <li>Você pode adicionar um atributo extra (como id ou class) para facilitar a seleção do link via JavaScript.</li>
+</ul>
+<p>No arquivo script.js:</p>
+<ul>
+  <li>Acesse o elemento <a> utilizando um seletor apropriado.</li>
+  <li>Remova o atributo target do link.</li>
+  <li>Altere a cor de fundo do link para azul utilizando JavaScript.</li>
+</ul>
+<p>Observação:</p>
+<ul>
+  <li>Utilize o DOM para resolver o exercício.</li>
+</ul>
+
+<hr>
+<pre>Resultado:</pre>
+
+<a id="link-infnet" href="https://www.infnet.edu.br/infnet/home/" target="_blank">Instituto Infnet</a>
+
+<script>
+let linkInfnet = document.getElementById("link-infnet");
+
+linkInfnet.removeAttribute('target');
+
+linkInfnet.style.color = 'white';
+linkInfnet.style.backgroundColor = 'blue';
+</script>
+
+</body>
+</html>

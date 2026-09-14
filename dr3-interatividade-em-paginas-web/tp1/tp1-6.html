@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.6</title>
+  <style>
+    body {
+      width: 576px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>6 Utilizando Função Construtora</h1>
+<p>No arquivo script.js siga as etapas abaixo:</p>
+<ul>
+  <li>Utilize o prompt para perguntar ao usuário:</li>
+  <ul>
+    <li>o nome de seu país</li>
+    <li>o continente onde ele se localiza</li>
+    <li>a capital desse país</li>
+  </ul>
+
+  <li>Armazene as respostas em três variáveis: nome, continente e capital.</li>
+  <li>Crie uma função construtora chamada Pais, que receba esses três dados como parâmetros e os atribua às propriedades do objeto (nome, continente, capital).</li>
+  <li>Crie um objeto utilizando a função construtora, passando as variáveis como argumentos.</li>
+  <li>Exiba o objeto criado no console com console.log.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+let nome = prompt('Digite o nome do seu país');
+let continente = prompt('Digite o nome do seu continente');
+let capital = prompt('Digite o nome da capital do país');
+
+function Pais(nome, continente, capital) {
+  this.nome = nome;
+  this.continente = continente;
+  this.capital = capital;
+}
+
+const brasil = new Pais(nome, continente, capital);
+
+console.log("brasil: ", brasil);
+</script>
+
+</body>
+</html>

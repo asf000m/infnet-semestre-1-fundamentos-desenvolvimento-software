@@ -1,0 +1,30 @@
+h1 {
+  text-decoration: underline;
+}
+
+#paragraph1 {
+  padding: 0.5em;
+  padding-left: 2em;
+  background-color: #ffb703;
+  color: #023047;
+  border: 5px solid #fb8500;
+}
+#paragraph2 {
+  margin: 2em;
+  text-align: center;
+  font-family: serif;
+  color: #c1121f;
+}
+#paragraph3 {
+  padding: 1em;
+  margin: 0 5em;
+  font-style: italic;
+  text-align: justify;
+  border: 2px dotted black;
+}
+#paragraph4 {
+  font-weight: bold;
+  color: #219ebc;
+  font-size: 10pt;
+  text-transform: uppercase;
+}

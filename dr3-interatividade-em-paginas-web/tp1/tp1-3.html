@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.3</title>
+  <style>
+    body {
+      width: 576px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>3 Criando objeto que possui método</h1>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Copie o objeto “carro” do exercício anterior e adicione a ele o método acelerar.</li>
+  <li>O método acelerar, ao ser chamado, deve exibir um alerta com a mensagem: "Acelerando!".</li>
+  <li>Crie uma variável que armazene o objeto carro e, por meio dessa variável, invoque o método acelerar.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+const carro = {
+  ano: undefined,
+  modelo: undefined,
+
+  acelerar() {
+    alert('Acelerando!');
+  }
+};
+
+console.log("carro: ", carro)
+
+let carro1 = carro;
+carro1.acelerar();
+
+console.log("carro1: ", carro1)
+</script>
+
+</body>
+</html>

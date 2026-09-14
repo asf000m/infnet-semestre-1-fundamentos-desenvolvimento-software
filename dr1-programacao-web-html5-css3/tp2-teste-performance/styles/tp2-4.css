@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Dyna Puff";
+  src: url("../fonts/DynaPuff.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans.ttf");
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/EBGaramond.ttf");
+}
+
+h1 {
+  text-decoration: underline;
+}
+#paragraph1 {
+  font-family: "Dyna Puff";
+}
+#paragraph2 {
+  font-family: "EB Garamond";
+}
+#paragraph3 {
+  font-family: "Nunito Sans";
+}

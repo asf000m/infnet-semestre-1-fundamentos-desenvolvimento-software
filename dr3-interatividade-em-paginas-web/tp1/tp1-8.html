@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.8</title>
+  <style>
+    body {
+      width: 576px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>8 Utilizando a palavra reservada “this”</h1>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Crie uma função construtora chamada Advogado que possua as seguintes propriedades:</li>
+  <ul>
+    <li>nome</li>
+    <li>horasTrabalhadas</li>
+    <li>valorHora</li>
+  </ul>
+
+  <li>Dentro dessa função, crie também um método chamado calcularGanho, que:</li>
+  <ul>
+    <li>multiplica horasTrabalhadas por valorHora</li>
+    <li>retorna o valor total ganho</li>
+    <li>utilize a palavra-chave this para acessar as propriedades do objeto</li>
+  </ul>
+
+  <li>Solicite os dados ao usuário usando prompt.</li>
+  <li>Instancie um novo objeto da função construtora Advogado, passando os valores obtidos do usuário.</li>
+  <li>Por fim, chame o método calcularGanho a partir do objeto criado e exiba o resultado com console.log.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+function Advogado(nome, horasTrabalhadas, valorHora) {
+  this.nome = nome;
+  this.horasTrabalhadas = horasTrabalhadas;
+  this.valorHora = valorHora;
+
+  this.calcularGanho = function () {
+    return this.horasTrabalhadas * this.valorHora;
+  }
+}
+
+let promptNome = prompt('Digite o nome do advogado');
+let promptHoras = Number(prompt('Digite o números de horas trabalhadas'));
+let promptValorHora = Number(prompt('Digite o valor da hora trabalhada'));
+let promptAdvogado = new Advogado(promptNome, promptHoras, promptValorHora);
+let valorTotal = promptAdvogado.calcularGanho();
+
+console.log(`Valor total: R$ ${valorTotal}`);
+</script>
+
+</body>
+</html>

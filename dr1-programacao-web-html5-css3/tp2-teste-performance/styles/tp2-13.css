@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  background-color: #F4F2E4;
+  
+  a {
+    text-decoration: none;
+    color: #EC8F67;
+    &:hover {
+      color: #C6E1D4;
+    }
+  }
+}
+
+#container {
+  min-height: 100dvh;
+  margin: 0 10%;
+  padding: 2% 2em;
+  border-left: 15px solid #F7D082;
+  border-right: 15px solid #F7D082;
+  
+  .background-image {
+    background: repeat-x center/contain url("../images/pattern-6854140_1280.png");
+    width: 100%;
+    height: 200px;
+  }
+}
+
+#topo, #sobre-mim, #meus-hobbies, #contato {
+  margin: 0 5% 10% 5%;
+}
+
+#topo {
+  text-align: center;
+
+  h1 {
+    color: #145069;
+  }
+
+  nav {
+    margin: 2rem 0;
+
+    ul {
+      list-style: none;
+      
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+  }
+}

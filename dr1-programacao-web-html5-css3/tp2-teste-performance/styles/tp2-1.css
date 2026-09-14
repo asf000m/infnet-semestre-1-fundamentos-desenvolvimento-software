@@ -1,0 +1,67 @@
+h1 {
+  text-decoration: underline;
+}
+
+.html-code {
+  border: 0.5px solid lightblue;
+  padding: 1em;
+  margin: 0 5%;
+}
+.css-code {
+  border: 1px solid lightgreen;
+  padding: 1em;
+  margin: 0 5%;
+}
+
+#seletor-elemento {
+  p {
+    color: red;
+  }
+}
+
+#seletor-id {
+  #introducao {
+    color: green;
+    font-weight: bold;
+  }
+}
+
+.special {
+  color: orange;
+  font-size: 1.2em;
+}
+
+#seletor-universal {
+  * {
+      border: 1px solid green;
+      color: blue;
+    }
+}
+
+#seletor-aninhamento {
+  p {
+    font-style: serif;
+    color: darkred;
+
+    & strong {
+      color: darkblue;
+      font-weight: bold;
+      font-style: sans-serif;
+    }
+
+    & strong:hover {
+      color: blue;
+    }
+  }
+}
+
+#seletor-atributo {
+  a[href] {
+    color: orange;
+    font-weight: bold;
+  }
+  a[target] {
+    color: darkorchid;
+    font-style: italic;
+  }
+}

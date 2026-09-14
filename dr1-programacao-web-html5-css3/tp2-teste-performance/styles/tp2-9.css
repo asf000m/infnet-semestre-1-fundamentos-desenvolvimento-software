@@ -1,0 +1,19 @@
+header {
+  background-color: gray;
+  
+  h1 {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: serif;
+  }
+}
+
+div {
+  text-align: center;
+  
+  img {
+    width: 90%;
+    text-align: center;
+  }
+}

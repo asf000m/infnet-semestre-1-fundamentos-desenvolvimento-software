@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+#links {
+  height: 100dvh;
+  padding: 2rem 20dvh;
+  margin: 0;
+  text-align: center;
+  background-color: #003049;
+  
+  li {
+    padding: 20px 0;
+    margin-bottom: 1em;
+    list-style: none;
+    font-size: 20pt;
+    border-radius: 10px;
+    background-color: #fdf0d5;
+
+    &:hover {
+      background-color: #669bbc;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: #780000;
+        font-weight: bold;
+      }
+
+      &:visited {
+        color: #c1121f;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 25px;
+  margin-right: 5px;
+}

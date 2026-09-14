@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.12</title>
+  <style>
+    body {
+      width: 576px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>12 Grupo - Objetos aninhados</h1>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Crie uma função construtora chamada Prefeito, que possua as seguintes propriedades:</li>
+  <ul>
+    <li>nome</li>
+    <li>idade</li>
+  </ul>
+
+  <li>Crie uma função construtora chamada Cidade, que possua:</li>
+  <ul>
+    <li>nome</li>
+    <li>anoFundacao</li>
+    <li>prefeito (essa propriedade deve receber um objeto criado com a função construtora Prefeito)</li>
+  </ul>
+
+  <li>Solicite ao usuário, por meio de prompt, os seguintes dados:</li>
+  <ul>
+    <li>Nome da cidade</li>
+    <li>Ano de fundação da cidade</li>
+    <li>Nome do prefeito</li>
+    <li>Idade do prefeito</li>
+  </ul>
+
+  <li>Instancie os objetos Prefeito e Cidade com os valores fornecidos pelo usuário.</li>
+  <li>Exiba no console (console.log) o objeto cidade com todas as informações preenchidas.</li>
+</ul>
+<p>Observação:</p>
+<ul>
+  <li>Utilize funções construtoras para estruturar os objetos. Não utilize objetos literais.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+function Prefeito(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
+
+function Cidade(nome, anoFundacao, prefeito) {
+  this.nome = nome;
+  this.anoFundacao = anoFundacao;
+  this.prefeito = prefeito;
+}
+
+let promptNomeCidade = prompt('Digite o nome da cidade');
+let promptAnoFundacao = Number(prompt('Digite o ano de fundação da cidade'));
+
+let promptNomePrefeito = prompt('Digite o nome do prefeito');
+let promptIdadePrefeito = Number(prompt('Digite a idade do prefeito'));
+
+let promptPrefeito = new Prefeito(promptNomePrefeito, promptIdadePrefeito);
+let promptCidade = new Cidade(promptNomeCidade, promptAnoFundacao, promptPrefeito);
+
+console.log(promptPrefeito);
+console.log(promptCidade);
+</script>
+
+</body>
+</html>

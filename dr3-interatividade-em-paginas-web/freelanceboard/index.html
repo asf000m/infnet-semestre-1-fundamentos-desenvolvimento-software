@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelanceBoard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- # header ---------------------------------------- -->
+  <header>
+    <h1 id="titulo-painel" class="descricao-header"></h1>
+    <p></p>
+  </header>
+  <!-- # nav ---------------------------------------- -->
+  <nav>
+    <ul>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </nav>
+  <!-- # main ---------------------------------------- -->
+  <main>
+    <!-- ## perfil section -->
+    <section id="perfil">
+      <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="Foto de perfil atualizada">
+      <div class="status-box"></div>
+    </section>
+    <!-- ## skills section -->
+    <section id="skills-section">
+      <ul id="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+    <!-- ## projetos section -->
+    <section id="projetos">
+      <!-- imagem -->
+      <div class="projeto-imagem">
+        <img src="https://cdn.pixabay.com/photo/2025/11/29/16/26/nature-9985148_1280.jpg" alt="imagem">
+      </div>
+      <div class="projeto-comentarios">
+        <!-- perfil usuário -->
+        <div class="perfil-usuario">
+          <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="Foto de perfil">
+          <span class="nome-usuario"></span>
+          <button class="bookmark-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2f4f4f"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+          </button>
+        </div>
+        <!-- comentários -->
+        <div class="comentarios">
+          <div class="comentario">
+            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="Foto de perfil">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae alias quisquam eveniet eum explicabo ea rem. Nostrum atque consectetur debitis numquam asperiores quis ab quam autem esse? Sit, unde.</p>
+          </div>
+          <div class="comentario">
+            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="Foto de perfil">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae alias quisquam eveniet eum explicabo ea rem. Nostrum atque consectetur debitis numquam asperiores quis ab quam autem esse? Sit, unde.</p>
+          </div>
+          <div class="comentario">
+            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="Foto de perfil">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae alias quisquam eveniet eum explicabo ea rem. Nostrum atque consectetur debitis numquam asperiores quis ab quam autem esse? Sit, unde.</p>
+          </div>
+        </div>
+        <!-- botões -->
+        <div class="botoes">
+          <button class="like-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2f4f4f"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+          </button>
+          <button class="comments-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2f4f4f"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
+          </button>
+          <button class="share-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2f4f4f"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg>
+          </button>
+        </div>
+        <div class="adicionar-comentario hidden">
+          <input type="text" id="add-comentario" name="adicionar-comentario" placeholder="Adicione um comentário..."></input>
+          <button type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2f4f4f"><path d="M480-480Zm0 400q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q43 0 83 8.5t77 24.5v90q-35-20-75.5-31.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-32-6.5-62T776-600h86q9 29 13.5 58.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm320-600v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80ZM620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ## to-do section -->
+    <section class="to-do-list">
+      <h2>Lista de tarefas</h2>
+      <span id="data-trabalho"></span>
+      <input type="text" placeholder="Nova tarefa...">
+      <button type="button">Adicionar Tarefa</button>
+      <ul id='lista-tarefas'>
+        
+      </ul>
+    </section>
+    <!-- ## cadastro-empresa section -->
+    <section class="cadastro-empresa">
+      <h2>Cadastro de Empresa</h2>
+      <form id="cadastro-empresa" name="cadastroEmpresa" onsubmit="return cadastroEmpresaValidacao()">
+        <div>
+          <label for="nome-empresa">Nome da empresa:</label> <br>
+          <input id="nome-empresa" type="text" name="nomeEmpresa" placeholder="Nome Empresa SA" required>
+        </div>
+        <div>
+          <label for="fundacao-empresa">Fundação da empresa:</label> <br>
+          <input id="fundacao-empresa" type="date" name="fundacaoEmpresa" placeholder="01/01/2000" required>
+        </div>
+        <div>
+          <label for="email-empresa">E-mail:</label> <br>
+          <input id="email-empresa" type="email" name="emailEmpresa" placeholder="empresa@email.com" required>
+        </div>
+        <div>
+          <label for="descricao-empresa">Descrição:</label> <br>
+          <textarea id="descricao-empresa" name="descricaoEmpresa" required></textarea>
+        </div>
+        <div>
+          <label for="atuacao-empresa">Atuação:</label> <br>
+          <select id="atuacao-empresa" name="atuacaoEmpresa">
+            <option value="vendas">Vendas</option>
+            <option value="marketing">Marketing</option>
+            <option value="aplicativos">Aplicativos</option>
+          </select>
+        </div>
+        <button id="enviar-btn" name="enviar" type="submit" value="enviar">Enviar</button>
+      </form>
+    </section>
+    <!-- ## cadastro-desenvolvedor section -->
+    <section class="cadastro-desenvolvedor">
+      <h2>Cadastro de Desenvolvedor</h2>
+      <div>
+        <label for="login">Login:</label> <br>
+        <input id="login" type="text" name="login">
+      </div>
+      <div>
+        <label for="idade">Idade:</label> <br>
+        <input id="idade" type="number" name="idade">
+      </div>
+      <div>
+        <label for="genero">Gênero:</label> <br>
+        <select id="genero" name="genero">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Estilos Musicais:</legend>
+          
+          <input type="checkbox" name="rock" value="rock">
+          <label for="rock">Rock</label>
+          <br>
+          <input type="checkbox" name="mpb" value="mpb">
+          <label for="mpb">MPB</label>
+          <br>
+          <input type="checkbox" name="funk" value="funk">
+          <label for="funk">Funk</label>
+          <br>
+          <input type="checkbox" name="pop" value="pop">
+          <label for="pop">Pop</label>
+        </fieldset>
+      </div>
+      <div>
+        <label for="senha">Senha:</label> <br>
+        <input id="senha" type="password" name="senha">
+      </div>
+      <div>
+        <label for="senhaConfirmacao">Confirmar Senha:</label> <br>
+        <input id="senha-confirmacao" type="password" name="senhaConfirmacao">
+      </div>
+    </section>
+    <!-- ## cobrança section -->
+    <section class="cobranca">
+      <h2>Cobrança via WhatsApp</h2>
+      <form >
+        <div>
+          <label for="tefelone">Telefone:</label> <br>
+          <input id="telefone" type="tel" name="telefone">
+        </div>
+        <div>
+          <label for="mensagemCobranca">Mensagem de Cobrança</label> <br>
+          <textarea id="mensagem-cobranca" name="mensagemCobranca"></textarea>
+        </div>
+        <button type="submit">Enviar Cobrança</button>
+      </form>
+    </section>
+  </main>
+  <!-- # footer ---------------------------------------- -->
+  <footer>
+    <p></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

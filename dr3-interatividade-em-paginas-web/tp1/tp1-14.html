@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.14</title>
+  <style>
+    body {
+      width: 576px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>14 Grupo - Alterando atributos com if</h1>
+<p>No arquivo index.html:</p>
+<ul>
+  <li>Crie um elemento <a> com:</li>
+    <ul>
+      <li>Um atributo id="link"</li>
+      <li>Um valor qualquer no atributo href (ex.: "#" ou outro link qualquer)</li>
+      <li>Um texto visível, como por exemplo: "Acessar site"</li>
+    </ul>
+</ul>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Acesse a tag <a> com id="link" utilizando o DOM.</li>
+  <li>Verifique se o valor do atributo href é igual a: "https://www.infnet.edu.br/infnet/instituto/".</li>
+  <li>Caso o valor seja diferente, altere o atributo href para o endereço acima.</li>
+</ul>
+<p>Observação:</p>
+<ul>
+  <li>Todas as verificações e alterações devem ser feitas exclusivamente via JavaScript (DOM).</li>
+  <li>Não modifique o valor do href manualmente no HTML.</li>
+</ul>
+
+<hr>
+<pre>Resultado</pre>
+
+<a id="link" href="#">Acessar site</a>
+
+<script>
+let link = document.getElementById('link');
+const INFNET_URL = "https://www.infnet.edu.br/infnet/instituto/"; 
+
+if (link.href !== INFNET_URL) {
+  link.href = INFNET_URL;
+}
+</script>
+
+</body>
+</html>

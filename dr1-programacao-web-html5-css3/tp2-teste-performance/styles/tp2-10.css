@@ -1,0 +1,15 @@
+h1 {
+  text-decoration: underline;
+}
+
+#lista1 {
+  li {
+    font-weight: bold;
+  }
+}
+
+#lista2 {
+  li {
+    font-style: italic;
+  }
+}

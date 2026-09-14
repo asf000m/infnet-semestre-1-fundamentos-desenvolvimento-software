@@ -1,0 +1,32 @@
+header {
+  margin-bottom: 50px;
+}
+.container {
+  position: relative;
+  width: 851px;
+  height: 315px;
+  border: 1px solid black;
+  
+  .perfil {
+    position: absolute;
+    bottom: 0px;
+    width: 25%;
+    border: 3px solid white;
+    border-radius: 0 10px 10px 0;
+  }
+  .background {
+    height: 315px;
+  }
+}
+#container1 {
+  background-image: url(https://cdn.pixabay.com/photo/2020/04/22/08/06/dolomites-5076487_1280.jpg);
+  background-size: cover;
+}
+#container2 {
+  background-image: url(https://cdn.pixabay.com/photo/2018/11/03/21/42/sunflowers-3792914_1280.jpg);
+  background-size: cover;
+}
+#container3 {
+  background-image: url(https://cdn.pixabay.com/photo/2022/11/05/19/56/bachalpsee-7572681_1280.jpg);
+  background-size: cover;
+}

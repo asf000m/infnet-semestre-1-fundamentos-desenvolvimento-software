@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.7</title>
+  <style>
+    body {
+      width: 576px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>7 Utilizando Função Construtora com aninhamento</h1>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Crie uma função construtora chamada Endereco que possua as seguintes propriedades:</li>
+  <ul>
+    <li>rua</li>
+    <li>bairro</li>
+    <li>cidade</li>
+  </ul>
+
+  <li>Crie uma função construtora chamada Escola que possua as seguintes propriedades:</li>
+  <ul>
+    <li>numeroAlunos</li>
+    <li>nomeDiretor</li>
+    <li>anoFundacao</li>
+    <li>endereco (essa propriedade deve receber um objeto criado com a função construtora Endereco)</li>
+  </ul>
+
+  <li>Solicite todas as informações ao usuário usando prompt, tanto para os dados da escola quanto para os dados do endereço.</li>
+  <li>Instancie os objetos Endereco e Escola com os valores fornecidos pelo usuário.</li>
+  <li>Exiba o objeto escola completo no console utilizando console.log.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+function Endereco(rua, bairro, cidade) {
+  this.rua = rua;
+  this.bairro = bairro;
+  this.cidade = cidade;
+}
+
+function Escola(numeroAlunos, nomeDiretor, anoFundacao, endereco) {
+  this.numeroAlunos = numeroAlunos;
+  this.nomeDiretor = nomeDiretor;
+  this.anoFundacao = anoFundacao;
+  this.endereco = endereco;
+}
+
+let promptRua = prompt('Digite o nome da rua');
+let promptBairro = prompt('Digite o nome do bairro');
+let promptCidade = prompt('Digite o nome da cidade');
+const promptEndereco = new Endereco(promptRua, promptBairro, promptCidade);
+
+console.log("promptEndereco: ", promptEndereco)
+
+let promptAlunos = Number(prompt('Digite o número de alunos'));
+let promptDiretor = prompt('Digite o nome do diretor');
+let promptFundacao = Number(prompt('Digite o ano de fundação'));
+const promptEscola = new Escola(promptAlunos, promptDiretor, promptCidade, promptEndereco);
+
+console.log("promptEscola: ", promptEscola);
+</script>
+
+</body>
+</html>

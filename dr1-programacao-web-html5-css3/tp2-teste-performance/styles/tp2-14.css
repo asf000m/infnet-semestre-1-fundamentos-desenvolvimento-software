@@ -1,0 +1,31 @@
+body {
+  width: 100dvw;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+div {
+  width: 300px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+ul {
+  list-style: none;
+  
+  li {
+    display: inline-block;
+    vertical-align: text-top;
+  }
+  
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  img {
+    width: 200px;
+  }
+}

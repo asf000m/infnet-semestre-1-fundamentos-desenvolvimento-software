@@ -1,0 +1,22 @@
+table,
+th, 
+td {
+  border: none;
+  border-collapse: collapse;
+}
+
+th {
+  text-decoration: underline;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 250px 5px 0;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+th,
+td {
+  padding-left: 10px;
+}

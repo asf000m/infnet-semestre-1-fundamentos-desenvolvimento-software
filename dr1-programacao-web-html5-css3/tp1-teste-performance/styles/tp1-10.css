@@ -1,0 +1,7 @@
+h1 {
+  text-decoration: underline;
+}
+#card {
+  border: 2px dotted red;
+  text-align: center;
+}

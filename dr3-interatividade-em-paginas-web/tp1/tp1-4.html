@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.4</title>
+  <style>
+    body {
+      width: 576px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>4 Criando objeto à partir de variáveis</h1>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Crie duas variáveis:</li>
+  <ul>
+    <li>nomeColegio: seu valor deve ser preenchido com prompt, contendo o nome de um colégio.</li>
+    <li>anoFundacao: seu valor deve ser preenchido com prompt, contendo o ano de fundação do colégio.</li>
+  </ul>
+
+  <li>Crie um objeto chamado colegio que possua duas propriedades:</li>
+  <ul>
+    <li>nome, que receba o valor da variável nomeColegio.</li>
+    <li>anoFundacao, que receba o valor da variável anoFundacao.</li>
+  </ul>
+
+  <li>Exiba no console.log este objeto.</li>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+let nomeColegio = prompt('Digite o nome do colégio');
+let anoFundacao = Number(prompt('Digite o ano de funcação do colégio'));
+
+const colegio = {
+  nome: nomeColegio,
+  anoFundacao,
+}
+
+console.log("colegio: ", colegio);
+</script>
+
+</body>
+</html>

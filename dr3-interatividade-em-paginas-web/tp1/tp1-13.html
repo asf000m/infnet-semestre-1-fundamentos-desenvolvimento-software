@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1.13</title>
+  <style>
+    body {
+      width: 576px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>13 Grupo - Objeto com método usando “this”</h1>
+<p>No arquivo script.js, siga as etapas abaixo:</p>
+<ul>
+  <li>Solicite ao usuário, por meio de prompt, o valor do raio de um 
+  círculo e armazene-o em uma variável.</li>
+  <li>Crie um objeto chamado circulo que possua:</li>
+  <ul>
+    <li>Uma propriedade raio, com o valor informado pelo usuário.</li>
+    <li>Um método calcularCircunferencia, que retorna o valor da circunferência do círculo.</li>
+    <li>Um método calcularArea, que retorna o valor da área do círculo.</li>
+  </ul>
+
+  <li>Exiba no console:</li>
+  <ul>
+    <li>O resultado da circunferência, chamando o método calcularCircunferencia.</li>
+    <li>O resultado da área, chamando o método calcularArea.</li>
+  </ul>
+</ul>
+<p>Observação:</p>
+<ul>
+  <li>Utilize a constante Math.PI nas fórmulas:</li>
+
+  <ul>
+    <li>Área = Math.PI * raio * raio</li>
+    <li>Circunferência = Math.PI * raio * 2</li>
+  </ul>
+</ul>
+
+<hr>
+<pre>Resultado via console.</pre>
+
+<script>
+let raio = Number(prompt('Digite o raio do círculo'));
+
+const circulo = {
+  raio,
+
+  calcularCircunferencia() {
+    return (2 * Math.PI * this.raio).toFixed(2);
+  },
+  calcularArea() {
+    return (Math.PI * this.raio ** 2).toFixed(2);
+  },
+}
+
+console.log("Circunferência:", circulo.calcularCircunferencia());
+console.log("Área:", circulo.calcularArea());
+</script>
+
+</body>
+</html>

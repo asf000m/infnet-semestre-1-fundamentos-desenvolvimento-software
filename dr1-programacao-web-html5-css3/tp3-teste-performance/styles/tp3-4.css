@@ -1,0 +1,26 @@
+table,
+tr,
+th,
+td {
+  background-color: #34495E;
+  border: 2px inset #34495E;
+}
+
+th,
+td {
+  padding: 10px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px #627b93;
+}
+
+table {
+  border-radius: 5px;
+}
+
+th {
+  color: yellow;
+}
+
+td {
+  color: white;
+}
