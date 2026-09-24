@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* # Body ---------------------------------------- */
+body {
+  max-width: 50dvw;
+  min-width: 900px;
+  margin: 0 auto;
+  font-family: Roboto, sans-serfi;
+}
+
+/* # Header ---------------------------------------- */
+header {
+  padding: 2rem 0;
+  
+  h1,
+  .subtitle {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #156082;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    color: #15826e;
+  }
+}
+
+/* # Nav ---------------------------------------- */
+nav {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  a {
+    padding: 0.9rem 1.5rem;
+    text-decoration: none;
+    color: #152982;
+
+    i {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: white;
+      background: #152982;
+    }
+
+  }
+  .external-link:hover,
+  .external-link:hover .fa-link {
+      color: white;
+      background-color: #823715;
+  }
+}
+
+/* # Main ---------------------------------------- */
+#main-content {
+  display: flex;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: #156082;
+}
+
+aside,
+#info-pessoais {
+  padding: 20px;
+  margin: 0 -0.5px;
+}
+
+#contato,
+#habilidades,
+#interesses,
+#perfil,
+#historico-edu,
+#exp-profissional {
+  padding: 0.75rem;
+  border-bottom: 1px solid #15826e;
+
+  p {
+    margin-bottom: 10px;
+    text-align:justify;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.external-link {
+  padding-right: 0.2rem;
+  text-decoration: none;
+  color: #823715;
+
+  .fa-link {
+    margin: 0 5px;
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  &:hover {
+    .fa-link {
+      color: #823715;
+    }
+  }
+}
+
+/* ## Aside -------------------- */
+aside {
+  border-right: 1px solid #15826e;
+  border-top: 1px solid #15826e;
+}
+#historico-edu {
+  p {
+    text-align: left;
+  }
+}
+
+/* ## info-pessoais -------------------- */
+#info-pessoais {
+  width: 75%;
+  border-left: 1px solid #15826e;
+  border-top: 1px solid #15826e;
+}
+
+/* ## portfolio -------------------- */
+#portfolio {
+  padding: 0.5rem 2rem;
+  border-top: 1px solid #15826e;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-shrink: 2;
+}
+.item {
+  width: 50%;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border: 1px solid lightgray;
+
+  a {
+    text-decoration: none;
+    color: #823715;
+
+    &:hover img {
+      transform: scale(1.02);
+      transition: 100ms;
+    }
+  }
+  .portfolio-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .portfolio-title {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 2px solid #15826e;
+  }
+}
+
+#top-arrow {
+  position: absolute;
+  left: 50%;
+  color: #152982;
+}
+
+/* # Footer ---------------------------------------- */
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #15826e;
+}
